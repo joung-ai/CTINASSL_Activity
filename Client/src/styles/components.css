@@ -1,0 +1,65 @@
+/* Shared pieces used on more than one page */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 var(--space-6);
+  border: 0;
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: var(--surface);
+}
+
+.btn--primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn[aria-disabled='true'] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn--primary[aria-disabled='true']:hover {
+  background: var(--primary);
+}
+
+/* Triage level: 26px square with the number, then the name */
+.level {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.level__box {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  color: var(--surface);
+  font-family: var(--font-display);
+  font-stretch: 87.5%;
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.level__box--1 { background: var(--level-1); }
+.level__box--2 { background: var(--level-2); }
+.level__box--3 { background: var(--level-3); }
+.level__box--4 { background: var(--level-4); }
+.level__box--5 { background: var(--level-5); }
+
+.wait--long {
+  color: var(--wait-long);
+  font-weight: 700;
+}

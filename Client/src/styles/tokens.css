@@ -1,0 +1,54 @@
+/* All design tokens live here. No pure white, no pure black. */
+:root {
+  /* Surfaces */
+  --sage: #93ae95; /* page / header background */
+  --sage-deep: #7f9d83; /* next-patient bar, segmented track */
+  --sidebar: #e3e8df;
+  --surface: #fbfcf9;
+  --page: #f4f6f1;
+  --primary: #0f6a39;
+  --primary-hover: #0b5a30;
+
+  /* Text and lines */
+  --ink: #17241c;
+  --ink-on-sage: #1f3a2b;
+  --muted: #56635a;
+  --line: #dde3d8;
+  --wait-long: #9a3412;
+
+  /* Triage level: acuity only, never decoration */
+  --level-1: #b42318;
+  --level-2: #c2410c;
+  --level-3: #a16207;
+  --level-4: #15803d;
+  --level-5: #1d4ed8;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* Radius: 6 level squares, 10 buttons / nav rows / segmented, 12 table panel */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+
+  /* Type */
+  --font-body: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Archivo', 'Segoe UI', system-ui, sans-serif;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 40px;
+  --text-4xl: 56px;
+
+  /* Layout */
+  --sidebar-closed: 148px;
+  --sidebar-open: 472px;
+  --page-inset: clamp(32px, 6.3%, 81px);
+}

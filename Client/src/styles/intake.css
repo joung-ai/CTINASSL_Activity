@@ -1,0 +1,132 @@
+.intake {
+  min-height: 100%;
+  height: 100%;
+  padding: var(--space-12) var(--page-inset);
+  background: var(--sage);
+  color: var(--ink-on-sage);
+}
+
+.intake__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  width: 100%;
+  max-width: 1130px;
+  height: 100%;
+  min-height: 480px;
+  margin-inline: auto;
+}
+
+.intake__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.intake__title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.intake__sub {
+  margin-top: var(--space-1);
+  font-size: var(--text-lg);
+}
+
+/* Segmented control */
+.segmented {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  border-radius: var(--radius-md);
+  background: var(--sage-deep);
+}
+
+.segmented__button {
+  min-height: 40px;
+  padding: 0 var(--space-4);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--ink);
+  font-size: var(--text-base);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.segmented__button:hover {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+}
+
+.segmented__button[aria-pressed='true'],
+.segmented__button[aria-pressed='true']:hover {
+  background: var(--surface);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 25%, transparent);
+}
+
+/* Table panel */
+.intake__panel {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.intake-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.intake-table th,
+.intake-table td {
+  padding: var(--space-4) var(--space-6);
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.intake-table tbody th,
+.intake-table td {
+  border-bottom: 1px solid var(--line);
+}
+
+.intake-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2px solid var(--ink);
+  background: var(--surface);
+  font-weight: 700;
+}
+
+.intake-table .intake-table__right {
+  text-align: right;
+}
+
+.intake-table__empty {
+  padding: var(--space-12) var(--space-6);
+  font-size: var(--text-lg);
+}
+
+.patient__name {
+  display: block;
+  font-weight: 700;
+}
+
+.patient__meta {
+  display: block;
+  color: var(--muted);
+}
+
+.status--active {
+  color: var(--primary);
+  font-weight: 700;
+}
